@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import SearchBar from '../containers/search_bar';
+import SearchBar from '../containers/search-bar';
+import WeatherList from '../containers/weather-list';
 
 require('dotenv').config();
 
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="container">
           <SearchBar />
+          <WeatherList />
       </div>
     );
   }
